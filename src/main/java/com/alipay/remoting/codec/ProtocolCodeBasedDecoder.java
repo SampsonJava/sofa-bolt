@@ -107,7 +107,7 @@ public class ProtocolCodeBasedDecoder extends AbstractBatchDecoder {
             throw new CodecException("Unknown protocol code: [" + protocolCode
                                      + "] while decode in ProtocolDecoder.");
         }
-
+        // 此处调用RpcCommandDecoder#decode
         protocol.getDecoder().decode(ctx, in, out);
     }
 }

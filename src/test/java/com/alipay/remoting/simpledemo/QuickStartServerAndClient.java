@@ -20,6 +20,9 @@ import com.alipay.remoting.exception.RemotingException;
 import com.alipay.remoting.rpc.RpcClient;
 import com.alipay.remoting.rpc.RpcServer;
 
+/**
+ * 快速测试服务和发送请求
+ */
 public class QuickStartServerAndClient {
     public static void main(String[] args) throws RemotingException, InterruptedException {
         RpcServer rpcServer = new RpcServer(9876);
